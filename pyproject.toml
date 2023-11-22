@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "switchdin-async"
+version = "0.1.0"
+description = ""
+authors = ["Felipe Ryan <feliperyan@google.com>"]
+readme = "README.md"
+packages = [{include = "switchdin_async"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+quart = "^0.19.4"
+hypercorn = "^0.15.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
