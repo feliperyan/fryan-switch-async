@@ -16,4 +16,4 @@ COPY --from=build /usr/app/venv ./venv
 COPY . .
 
 ENV PATH="/usr/app/venv/bin:$PATH"
-CMD [ "hypercorn", "--bind", ":$PORT", "main:app" ]
+CMD exec hypercorn --bind :$PORT main:app
